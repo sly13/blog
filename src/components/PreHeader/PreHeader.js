@@ -12,32 +12,32 @@ class PreHeader extends Component {
                             <i className="fa fa-calendar-check-o"></i>May 29, 2017
                             </div>
                             <ul className="unstyled top-nav">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Write for Us</a></li>
-                            <li><a href="#">Advertise</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Write for Us</a></li>
+                            <li><a href="/">Advertise</a></li>
+                            <li><a href="/">Contact</a></li>
                             </ul>
                         </div>
             
                         <div className="col-md-4 top-social text-lg-right text-md-center">
                             <ul className="unstyled">
                             <li>
-                                <a title="Facebook" href="#">
+                                <a title="Facebook" href="/">
                                     <span className="social-icon"><i className="fa fa-facebook"></i></span>
                                 </a>
-                                <a title="Twitter" href="#">
+                                <a title="Twitter" href="/">
                                     <span className="social-icon"><i className="fa fa-twitter"></i></span>
                                 </a>
-                                <a title="Google+" href="#">
+                                <a title="Google+" href="/">
                                     <span className="social-icon"><i className="fa fa-google-plus"></i></span>
                                 </a>
-                                <a title="Linkdin" href="#">
+                                <a title="Linkdin" href="/">
                                     <span className="social-icon"><i className="fa fa-linkedin"></i></span>
                                 </a>
-                                <a title="Rss" href="#">
+                                <a title="Rss" href="/">
                                     <span className="social-icon"><i className="fa fa-rss"></i></span>
                                 </a>
-                                <a title="Skype" href="#">
+                                <a title="Skype" href="/">
                                     <span className="social-icon"><i className="fa fa-skype"></i></span>
                                 </a>
                             </li>

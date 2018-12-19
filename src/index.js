@@ -20,7 +20,6 @@ import './css/colorbox.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
 
-
 //import './js/owl.carousel.min.js';
 //import './js/jquery.colorbox.js';
 //import './js/smoothscroll.js';

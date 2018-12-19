@@ -465,7 +465,7 @@ ul.list-check li:before {
 }
 
 .pattern-bg {
-  background: #f5f5f5 url(../../images/crossword.png);
+  background: #f5f5f5 url(../images/crossword.png);
 }
 
 a[href^="tel"] {
@@ -3018,7 +3018,7 @@ ul.navbar-nav > li.mega-dropdown {
 
 .ts-newsletter {
   background-color: #f1f1f1;
-  background-image: url(../../images/newsletter-icon.png);
+  background-image: url(../images/newsletter-icon.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   padding: 30px;
@@ -3137,7 +3137,7 @@ label {
 ================================================== */
 
 .boxed-layout {
-  background: #f7f7f7 url(../../images/boxed-bg.jpg) no-repeat; 
+  background: #f7f7f7 url(../images/boxed-bg.jpg) no-repeat; 
   background-position: center 0px;
   background-repeat: no-repeat;
   background-attachment: fixed;

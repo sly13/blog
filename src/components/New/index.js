@@ -16,17 +16,17 @@ class Index extends Component {
                  <div class="item">
                    <div class="post-block-style post-float-half clearfix">
                      <div class="post-thumb">
-                       <a href="#">
+                       <a href="/">
                          <img class="img-fluid" src="images/news/video/video1.jpg" alt="" />
                        </a>
                      </div>
-                     <a class="post-cat" href="#">Video</a>
+                     <a class="post-cat" href="/">Video</a>
                      <div class="post-content">
                         <h2 class="post-title">
-                          <a href="#">KJerry's will sell food cream that tastes like your favorite video</a>
+                          <a href="/">KJerry's will sell food cream that tastes like your favorite video</a>
                         </h2>
                         <div class="post-meta">
-                          <span class="post-author"><a href="#">John Doe</a></span>
+                          <span class="post-author"><a href="/">John Doe</a></span>
                           <span class="post-date">Mar 29, 2017</span>
                         </div>
                         <p>Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted ...</p>
@@ -37,17 +37,17 @@ class Index extends Component {
    
                    <div class="post-block-style post-float-half clearfix">
                      <div class="post-thumb">
-                       <a href="#">
+                       <a href="/">
                          <img class="img-fluid" src="images/news/tech/game5.jpg" alt="" />
                        </a>
                      </div>
-                     <a class="post-cat" href="#">Games</a>
+                     <a class="post-cat" href="/">Games</a>
                      <div class="post-content">
                         <h2 class="post-title">
-                          <a href="#">Oazer and Lacon bring eSport expertise to new PS4 controllers</a>
+                          <a href="/">Oazer and Lacon bring eSport expertise to new PS4 controllers</a>
                         </h2>
                         <div class="post-meta">
-                          <span class="post-author"><a href="#">John Doe</a></span>
+                          <span class="post-author"><a href="/">John Doe</a></span>
                           <span class="post-date">Mar 27, 2017</span>
                         </div>
                         <p>Pityful a rethoric question ran over her cheek When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of he...</p>
@@ -58,17 +58,17 @@ class Index extends Component {
    
                    <div class="post-block-style post-float-half clearfix">
                      <div class="post-thumb">
-                       <a href="#">
+                       <a href="/">
                          <img class="img-fluid" src="images/news/tech/game4.jpg" alt="" />
                        </a>
                      </div>
-                     <a class="post-cat" href="#">Games</a>
+                     <a class="post-cat" href="/">Games</a>
                      <div class="post-content">
                         <h2 class="post-title">
-                          <a href="#">Super Tario Run isn’t groundbreaking, but it has Mintendo charm</a>
+                          <a href="/">Super Tario Run isn’t groundbreaking, but it has Mintendo charm</a>
                         </h2>
                         <div class="post-meta">
-                          <span class="post-author"><a href="#">John Doe</a></span>
+                          <span class="post-author"><a href="/">John Doe</a></span>
                           <span class="post-date">Feb 24, 2017</span>
                         </div>
                         <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and ...</p>
@@ -79,17 +79,17 @@ class Index extends Component {
    
                    <div class="post-block-style post-float-half clearfix">
                      <div class="post-thumb">
-                       <a href="#">
+                       <a href="/">
                          <img class="img-fluid" src="images/news/tech/robot5.jpg" alt="" />
                        </a>
                      </div>
-                     <a class="post-cat" href="#">Robotics</a>
+                     <a class="post-cat" href="/">Robotics</a>
                      <div class="post-content">
                         <h2 class="post-title">
-                          <a href="#">Robots in hospitals can be quite handy to navigate around the ho…</a>
+                          <a href="/">Robots in hospitals can be quite handy to navigate around the ho…</a>
                         </h2>
                         <div class="post-meta">
-                          <span class="post-author"><a href="#">John Doe</a></span>
+                          <span class="post-author"><a href="/">John Doe</a></span>
                           <span class="post-date">Feb 24, 2017</span>
                         </div>
                         <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and ...</p>
@@ -100,17 +100,17 @@ class Index extends Component {
                  <div class="item">
                    <div class="post-block-style post-float-half clearfix">
                      <div class="post-thumb">
-                       <a href="#">
+                       <a href="/">
                          <img class="img-fluid" src="images/news/video/video2.jpg" alt="" />
                        </a>
                      </div>
-                     <a class="post-cat" href="#">Video</a>
+                     <a class="post-cat" href="/">Video</a>
                      <div class="post-content">
                         <h2 class="post-title">
-                          <a href="#">TG G6 will have dual 13-megapixel cameras on the back</a>
+                          <a href="/">TG G6 will have dual 13-megapixel cameras on the back</a>
                         </h2>
                         <div class="post-meta">
-                          <span class="post-author"><a href="#">John Doe</a></span>
+                          <span class="post-author"><a href="/">John Doe</a></span>
                           <span class="post-date">Mar 29, 2017</span>
                         </div>
                         <p>Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted ...</p>
@@ -121,17 +121,17 @@ class Index extends Component {
    
                    <div class="post-block-style post-float-half clearfix">
                      <div class="post-thumb">
-                       <a href="#">
+                       <a href="/">
                          <img class="img-fluid" src="images/news/video/video3.jpg" alt="" />
                        </a>
                      </div>
-                     <a class="post-cat" href="#">Video</a>
+                     <a class="post-cat" href="/">Video</a>
                      <div class="post-content">
                         <h2 class="post-title">
-                          <a href="#">Breeze through 17 locations in Europe in this breathtaking v…</a>
+                          <a href="/">Breeze through 17 locations in Europe in this breathtaking v…</a>
                         </h2>
                         <div class="post-meta">
-                          <span class="post-author"><a href="#">John Doe</a></span>
+                          <span class="post-author"><a href="/">John Doe</a></span>
                           <span class="post-date">Mar 31, 2017</span>
                         </div>
                         <p>Pityful a rethoric question ran over her cheek When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of he...</p>
@@ -142,17 +142,17 @@ class Index extends Component {
    
                    <div class="post-block-style post-float-half clearfix">
                      <div class="post-thumb">
-                       <a href="#">
+                       <a href="/">
                          <img class="img-fluid" src="images/news/lifestyle/architecture1.jpg" alt="" />
                        </a>
                      </div>
-                     <a class="post-cat" href="#">Architecture</a>
+                     <a class="post-cat" href="/">Architecture</a>
                      <div class="post-content">
                         <h2 class="post-title">
-                          <a href="#">Science meets architecture in robotically woven, solar...</a>
+                          <a href="/">Science meets architecture in robotically woven, solar...</a>
                         </h2>
                         <div class="post-meta">
-                          <span class="post-author"><a href="#">John Doe</a></span>
+                          <span class="post-author"><a href="/">John Doe</a></span>
                           <span class="post-date">Mar 23, 2017</span>
                         </div>
                         <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and ...</p>
@@ -163,17 +163,17 @@ class Index extends Component {
    
                    <div class="post-block-style post-float-half clearfix">
                      <div class="post-thumb">
-                       <a href="#">
+                       <a href="/">
                          <img class="img-fluid" src="images/news/tech/game1.jpg" alt="" />
                        </a>
                      </div>
-                     <a class="post-cat" href="#">Robotics</a>
+                     <a class="post-cat" href="/">Robotics</a>
                      <div class="post-content">
                         <h2 class="post-title">
-                          <a href="#">Historical heroes and robot dinosaurs: New games on our…</a>
+                          <a href="/">Historical heroes and robot dinosaurs: New games on our…</a>
                         </h2>
                         <div class="post-meta">
-                          <span class="post-author"><a href="#">John Doe</a></span>
+                          <span class="post-author"><a href="/">John Doe</a></span>
                           <span class="post-date">Feb 24, 2017</span>
                         </div>
                         <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and ...</p>
@@ -193,15 +193,15 @@ class Index extends Component {
    
                  <div class="post-overaly-style clearfix">
                    <div class="post-thumb">
-                     <a href="#">
+                     <a href="/">
                        <img class="img-fluid" src="images/news/lifestyle/health4.jpg" alt="" />
                      </a>
                    </div>
                    
                    <div class="post-content">
-                      <a class="post-cat" href="#">Health</a>
+                      <a class="post-cat" href="/">Health</a>
                       <h2 class="post-title">
-                        <a href="#">Smart packs parking sensor tech and beeps when col…</a>
+                        <a href="/">Smart packs parking sensor tech and beeps when col…</a>
                       </h2>
                       <div class="post-meta">
                         <span class="post-date">Feb 06, 2017</span>
@@ -215,15 +215,15 @@ class Index extends Component {
                      <li class="clearfix">
                        <div class="post-block-style post-float clearfix">
                          <div class="post-thumb">
-                           <a href="#">
+                           <a href="/">
                              <img class="img-fluid" src="images/news/tech/gadget3.jpg" alt="" />
                            </a>
-                           <a class="post-cat" href="#">Gadgets</a>
+                           <a class="post-cat" href="/">Gadgets</a>
                          </div>
    
                          <div class="post-content">
                             <h2 class="post-title title-small">
-                              <a href="#">Panasonic's new Sumix CH7 an ultra portable filmmaker's drea…</a>
+                              <a href="/">Panasonic's new Sumix CH7 an ultra portable filmmaker's drea…</a>
                             </h2>
                             <div class="post-meta">
                               <span class="post-date">Mar 13, 2017</span>
@@ -235,15 +235,15 @@ class Index extends Component {
                      <li class="clearfix">
                        <div class="post-block-style post-float clearfix">
                          <div class="post-thumb">
-                           <a href="#">
+                           <a href="/">
                              <img class="img-fluid" src="images/news/lifestyle/travel5.jpg" alt="" />
                            </a>
-                           <a class="post-cat" href="#">Travel</a>
+                           <a class="post-cat" href="/">Travel</a>
                          </div>
    
                          <div class="post-content">
                             <h2 class="post-title title-small">
-                              <a href="#">Hynopedia helps female travelers find health care...</a>
+                              <a href="/">Hynopedia helps female travelers find health care...</a>
                             </h2>
                             <div class="post-meta">
                               <span class="post-date">Jan 11, 2017</span>
@@ -255,15 +255,15 @@ class Index extends Component {
                      <li class="clearfix">
                        <div class="post-block-style post-float clearfix">
                          <div class="post-thumb">
-                           <a href="#">
+                           <a href="/">
                              <img class="img-fluid" src="images/news/tech/robot5.jpg" alt="" />
                            </a>
-                           <a class="post-cat" href="#">Robotics</a>
+                           <a class="post-cat" href="/">Robotics</a>
                          </div>
    
                          <div class="post-content">
                             <h2 class="post-title title-small">
-                              <a href="#">Robots in hospitals can be quite handy to navigate around...</a>
+                              <a href="/">Robots in hospitals can be quite handy to navigate around...</a>
                             </h2>
                             <div class="post-meta">
                               <span class="post-date">Feb 19, 2017</span>
@@ -286,7 +286,7 @@ class Index extends Component {
                    </div>
    
                    <div class="newsletter-form">
-                     <form action="#" method="post">
+                     <form action="/" method="post">
                        <div class="form-group">
                          <input type="email" name="email" id="newsletter-form-email" class="form-control form-control-lg" placeholder="E-mail" autocomplete="off"/>
                          <button class="btn btn-primary">Subscribe</button>

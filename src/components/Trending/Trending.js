@@ -14,21 +14,21 @@ class Trending extends Component {
                             <div class="item">
                                 <div class="post-content">
                                     <h2 class="post-title title-small">
-                                        <a href="#">The best MacBook Pro alternatives in 2017 for Apple users</a>
+                                        <a href="/">The best MacBook Pro alternatives in 2017 for Apple users</a>
                                     </h2>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="post-content">
                                     <h2 class="post-title title-small">
-                                        <a href="#">Soaring through Southern Patagonia with the Premium Byrd drone</a>
+                                        <a href="/">Soaring through Southern Patagonia with the Premium Byrd drone</a>
                                     </h2>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="post-content">
                                     <h2 class="post-title title-small">
-                                        <a href="#">Super Tario Run isn’t groundbreaking, but it has Mintendo charm</a>
+                                        <a href="/">Super Tario Run isn’t groundbreaking, but it has Mintendo charm</a>
                                     </h2>
                                 </div>
                             </div>

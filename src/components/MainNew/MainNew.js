@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+
 
 class MainNew extends Component {
     state = {  }
@@ -24,10 +23,8 @@ class MainNew extends Component {
                     <div class="container">
                         <div class="row">
                         <div class="col-lg-8 col-md-12 pad-r">
-
+                            <div id="featured-slider" class="owl-carousel owl-theme featured-slider content-bottom">
                             
-
-                            <OwlCarousel id="featured-slider" className="owl-carousel owl-theme featured-slider content-bottom" >
                             <div class="item" style={backgroundImageStyle1}>
                                 <div class="featured-post">
                                     <div class="post-content">
@@ -63,9 +60,7 @@ class MainNew extends Component {
                                     </div>
                                 </div>
                             </div>
-
-                            </OwlCarousel>
-
+                            </div>
                         </div>
                 
                         <div class="col-lg-4 col-md-12 pad-l">
