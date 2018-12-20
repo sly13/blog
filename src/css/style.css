@@ -3151,3 +3151,11 @@ label {
   overflow-x: hidden;
   box-shadow: 0 7px 13px rgba(0, 0, 0, 0.15);
 }
+
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+

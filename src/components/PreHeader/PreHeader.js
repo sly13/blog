@@ -4,7 +4,7 @@ class PreHeader extends Component {
     render() {
         return (
             <>
-                <div id="top-bar" class="top-bar">
+                <div id="top-bar" className="top-bar">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8">

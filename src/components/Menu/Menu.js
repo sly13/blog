@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
-
+import Search from "./Search";
+import $ from 'jquery'
 class Menu extends Component {
+
+  componentDidMount() {
+    $(".nav.navbar-nav li a").on("click", function() { 
+      $(this).parent("li").find(".dropdown-menu").slideToggle();
+      $(this).find("li i").toggleClass("fa-angle-down fa-angle-up");
+    });
+  
+  
+    $('.nav-tabs[data-toggle="tab-hover"] > li > a').hover( function(){
+        $(this).tab('show');
+    });
+  }
     state = {  }
     render() {
         return (
@@ -10,9 +23,10 @@ class Menu extends Component {
               <div className="row">
                 <nav className="navbar navbar-expand-lg col">
                   <div className="site-nav-inner float-left">
-                       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                          <span className="navbar-toggler-icon"></span>
-                       </button>
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
         
                     <div id="navbarSupportedContent" className="collapse navbar-collapse navbar-responsive-collapse">
                       <ul className="nav navbar-nav">
@@ -386,14 +400,7 @@ class Menu extends Component {
                   </div>
                 </nav>
         
-                <div className="nav-search">
-                  <span id="search"><i className="fa fa-search"></i></span>
-                </div>
-                
-                <div className="search-block" style={style}>
-                  <input type="text" className="form-control" placeholder="Type what you want and enter"/>
-                  <span className="search-close">&times;</span>
-                </div>
+                <Search></Search>
         
               </div>
             </div>

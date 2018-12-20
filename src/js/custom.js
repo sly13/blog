@@ -41,7 +41,7 @@ jQuery(function($) {
 
 
 	/* ----------------------------------------------------------- */
-  	/*  Site search
+  	/*  Site search 
   	/* ----------------------------------------------------------- */
 
 
@@ -76,14 +76,7 @@ jQuery(function($) {
 			slideSpeed:500,
 			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 			items : 1,
-			responsive:{
-			  0:{
-					items:1
-			  },
-			  600:{
-					items:1
-			  }
-			}
+			responsive:{0:{items:1},600:{items:1}}
 
 		});
 

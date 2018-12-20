@@ -16,15 +16,16 @@ class App extends Component {
         return (
             <>
                 
-                <div class="body-inner"></div>
-                <PreHeader></PreHeader>
-                <Header></Header>
-                <Menu></Menu>
-                <Trending></Trending>
-                <MainNew></MainNew>
-                <MainBlock></MainBlock>
-                <New></New>
-                <Footer></Footer>
+                <div className="body-inner">
+                    <PreHeader></PreHeader>
+                    <Header></Header>
+                    <Menu></Menu>
+                    <Trending></Trending>
+                    <MainNew></MainNew>
+                    <MainBlock></MainBlock>
+                    <New></New>
+                    <Footer></Footer>
+                </div>
             </>
         );
     }
