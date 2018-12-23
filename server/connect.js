@@ -1,10 +1,22 @@
-const Pool = require("pg").Pool;
-const pool = new Pool({
-  user: "blog",
+// const Pool = require("pg").Pool;
+// const pool = new Pool({
+//   user: "blog",
+//   host: "localhost",
+//   database: "blog",
+//   password: "blog",
+//   port: 5432
+// });
+
+var mysql = require("mysql");
+const connection = mysql.createConnection({
+  connectionLimit: 10,
   host: "localhost",
+  user: "root",
+  password: "root",
   database: "blog",
-  password: "blog",
-  port: 5432
+  port: 8889
 });
 
-export default pool;
+module.exports = {
+  connection
+};
