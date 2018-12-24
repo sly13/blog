@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Search from "./Search";
+import Search from "./search";
 import $ from "jquery";
 class Menu extends Component {
   componentDidMount() {
@@ -703,9 +703,5 @@ class Menu extends Component {
     );
   }
 }
-
-let style = {
-  display: "none"
-};
 
 export default Menu;

@@ -1,0 +1,56 @@
+/* Footer
+================================================== */
+
+.footer {
+  background-color: #1c1c1c;
+  color: #969696;
+  padding: 70px 0;
+}
+
+.footer .widget-title {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 18px;
+}
+
+.footer ul li a {
+  color: #a3a3a3;
+}
+
+/* Trending */
+
+.footer .post-title.title-small {
+  font-weight: normal;
+}
+
+.footer-widget .post-block-style.post-float .post-thumb img {
+  max-width: 95px;
+  min-height: 75px;
+}
+
+.footer-widget .post-meta span.post-date {
+  color: #676767;
+}
+
+/* Footer Widget Categories */
+
+.footer-widget.widget-categories ul {
+  padding-right: 30px;
+}
+
+.footer-widget.widget-categories ul li .catCounter {
+  float: right;
+}

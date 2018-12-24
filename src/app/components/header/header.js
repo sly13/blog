@@ -18,7 +18,7 @@ class Header extends Component {
 
               <div class="col-xs-12 col-sm-9 col-md-9  col-lg-9 header-right">
                 <div class="pull-right">
-                  <a href="#">
+                  <a href="/">
                     <img
                       src="images/banner.png"
                       class="img-responsive"

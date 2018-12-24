@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Info from "./Info";
-import BackToTop from "../BackToTop/BackToTop";
+import Info from "./info";
+import BackToTop from "../backToTop/backToTop";
+import "./footer.css";
 
 class Footer extends Component {
   state = {};

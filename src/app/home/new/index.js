@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import More from "./More";
-import Popular from "./Popular";
-import NewsLetters from "./NewsLetters";
+import More from "./more";
+import Popular from "./popular";
+import NewsLetters from "./newsLetters";
 
 class Index extends Component {
   state = {};

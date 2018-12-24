@@ -5,8 +5,8 @@ const port = 8080;
 
 var mysql = require("mysql");
 
-const db = require("./request/category");
-const postDB = require("./request/post");
+const db = require("./api/category");
+const postDB = require("./api/post");
 
 app.use(bodyParser.json());
 app.use(

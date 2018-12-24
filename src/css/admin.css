@@ -1,0 +1,8 @@
+body,
+wrapper {
+  min-height: 100vh;
+}
+
+.navbar-toggler {
+  padding: 0 !important;
+}
