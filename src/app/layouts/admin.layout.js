@@ -4,6 +4,7 @@ import Header from "../admin/components/header/header";
 import Footer from "../admin/components/footer/footer";
 
 import "../../css/admin.css";
+import "../../css/font-awesome.min.css";
 
 class Layout extends Component {
   render() {

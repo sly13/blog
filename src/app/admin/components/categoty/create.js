@@ -1,47 +1,39 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router";
+
+import { createCategory } from "../../action";
 
 class CategoryCreate extends Component {
   state = {};
+
+  handleSubmit = e => {
+    e.preventDefault();
+    createCategory({ name: e.target.name.value })
+      .then(response => {
+        this.props.history.push("/category-list");
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  };
+
   render() {
     return (
       <>
-        <h1>Category Create Here</h1>
-        <div classNameName="col-lg-6">
-          <form>
+        <div className="col-lg-6">
+          <h1>Create category</h1>
+          <form onSubmit={this.handleSubmit}>
             <div className="form-group">
-              <label for="exampleInputEmail1">Email address</label>
               <input
-                type="email"
+                type="text"
                 className="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
+                placeholder="Enter name"
+                name="name"
               />
+            </div>
 
-              <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
-              </small>
-            </div>
-            <div className="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input
-                type="password"
-                className="form-control"
-                id="exampleInputPassword1"
-                placeholder="Password"
-              />
-            </div>
-            <div className="form-check">
-              <input
-                type="checkbox"
-                className="form-check-input"
-                id="exampleCheck1"
-              />
-              <label className="form-check-label" for="exampleCheck1">
-                Check me out
-              </label>
-            </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-dark">
               Submit
             </button>
           </form>
@@ -51,4 +43,4 @@ class CategoryCreate extends Component {
   }
 }
 
-export default CategoryCreate;
+export default withRouter(CategoryCreate);

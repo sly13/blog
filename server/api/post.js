@@ -1,7 +1,8 @@
 const { connection } = require("../connect");
 
 const getPosts = (request, response) => {
-  const queryString = "SELECT * FROM post ORDER BY id ASC";
+  const queryString = `SELECT post.id, name as category, title, subText, text, timeCreated FROM post 
+  LEFT JOIN category on category.id = post.categoryId ORDER BY id ASC`;
   connection.query(queryString, (error, results) => {
     if (error) {
       throw error;
@@ -12,18 +13,20 @@ const getPosts = (request, response) => {
 
 const getPostById = (request, response) => {
   const id = parseInt(request.params.id);
-  const queryString = "SELECT * FROM post WHERE id = $1";
+  const queryString = "SELECT * FROM post WHERE id = ?";
 
-  connection.query(queryString, [id], (error, results) => {
+  connection.query(queryString, id, (error, results) => {
     if (error) {
       throw error;
     }
-    response.status(200).json(results.rows);
+    response.status(200).json(results[0]);
   });
 };
 
 const createPost = (request, response) => {
   const { categoryId, title, subText, text } = request.body;
+
+  console.log(categoryId, title, subText, text);
   const queryString = "INSERT INTO post SET ?";
 
   connection.query(
