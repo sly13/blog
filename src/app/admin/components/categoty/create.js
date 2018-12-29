@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
 
-import { createCategory } from "../../action";
+import { createCategory } from "../../../../action";
 
 class CategoryCreate extends Component {
   state = {};

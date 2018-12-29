@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Item from "./items";
 
-import { getCategories } from "../../action";
+import { getCategories } from "../../../../action";
 
 class CategoryList extends Component {
   state = {
@@ -42,7 +42,7 @@ class CategoryList extends Component {
                 </tr>
               </thead>
               <tbody>
-                <Item data={this.state.data} handler={this.handler} />
+                <Item data={data} handler={this.handler} />
               </tbody>
             </table>
           </>

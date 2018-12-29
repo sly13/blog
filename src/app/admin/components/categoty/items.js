@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { deleteCategory } from "../../action";
+import { deleteCategory } from "../../../../action";
 
 class Item extends Component {
   handleDelete = id => {

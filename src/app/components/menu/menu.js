@@ -154,7 +154,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/health1.jpg"
+                                              src="../../../images/news/lifestyle/health1.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -178,7 +178,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/health2.jpg"
+                                              src="../../../images/news/lifestyle/health2.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -202,7 +202,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/health3.jpg"
+                                              src="../../../images/news/lifestyle/health3.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -226,7 +226,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/health4.jpg"
+                                              src="../../../images/news/lifestyle/health4.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -258,7 +258,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/travel1.jpg"
+                                              src="../../../images/news/lifestyle/travel1.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -282,7 +282,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/travel2.jpg"
+                                              src="../../../images/news/lifestyle/travel2.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -306,7 +306,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/travel3.jpg"
+                                              src="../../../images/news/lifestyle/travel3.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -331,7 +331,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/travel4.jpg"
+                                              src="../../../images/news/lifestyle/travel4.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -362,7 +362,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/food1.jpg"
+                                              src="../../../images/news/lifestyle/food1.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -386,7 +386,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/food2.jpg"
+                                              src="../../../images/news/lifestyle/food2.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -410,7 +410,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/food3.jpg"
+                                              src="../../../images/news/lifestyle/food3.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -434,7 +434,7 @@ class Menu extends Component {
                                           <a href="/">
                                             <img
                                               className="img-fluid"
-                                              src="images/news/lifestyle/food4.jpg"
+                                              src="../../../images/news/lifestyle/food4.jpg"
                                               alt=""
                                             />
                                           </a>
@@ -480,7 +480,7 @@ class Menu extends Component {
                                   <div className="post-thumb">
                                     <img
                                       className="img-fluid"
-                                      src="images/news/video/video4.jpg"
+                                      src="../../../mages/news/video/video4.jpg"
                                       alt=""
                                     />
                                     <a
@@ -508,7 +508,7 @@ class Menu extends Component {
                                   <div className="post-thumb">
                                     <img
                                       className="img-fluid"
-                                      src="images/news/video/video3.jpg"
+                                      src="../../../images/news/video/video3.jpg"
                                       alt=""
                                     />
                                     <a
@@ -536,7 +536,7 @@ class Menu extends Component {
                                   <div className="post-thumb">
                                     <img
                                       className="img-fluid"
-                                      src="images/news/video/video2.jpg"
+                                      src="../../../images/news/video/video2.jpg"
                                       alt=""
                                     />
                                     <a
@@ -563,7 +563,7 @@ class Menu extends Component {
                                   <div className="post-thumb">
                                     <img
                                       className="img-fluid"
-                                      src="images/news/video/video1.jpg"
+                                      src="../../../images/news/video/video1.jpg"
                                       alt=""
                                     />
                                     <a
@@ -698,7 +698,6 @@ class Menu extends Component {
             </div>
           </div>
         </div>
-        <div class="gap-40" />
       </>
     );
   }

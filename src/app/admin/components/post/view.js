@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import renderHTML from "react-render-html";
-import { getPost } from "../../action";
+import { getPost } from "../../../../action";
 
 class PostView extends Component {
   state = {

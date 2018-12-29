@@ -11,6 +11,16 @@ const getPosts = (request, response) => {
   });
 };
 
+const getTrendingPosts = (request, response) => {
+  const queryString = `Select id, title from post order by timeCreated DESC limit 3`;
+  connection.query(queryString, (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(200).json(results);
+  });
+};
+
 const getPostById = (request, response) => {
   const id = parseInt(request.params.id);
   const queryString = "SELECT * FROM post WHERE id = ?";
@@ -93,6 +103,7 @@ const deletePost = (request, response) => {
 
 module.exports = {
   getPosts,
+  getTrendingPosts,
   getPostById,
   createPost,
   updatePost,

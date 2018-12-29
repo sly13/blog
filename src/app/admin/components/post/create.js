@@ -2,15 +2,24 @@ import React, { Component } from "react";
 import { withRouter } from "react-router";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import ImageUploader from "react-images-upload";
 
-import { createPost } from "../../action";
+import { createPost } from "../../../../action";
 
 class PostCreate extends Component {
   state = {
     title: "",
     subText: "",
     text: "",
-    posts: {}
+    posts: {},
+    pictures: []
+  };
+
+  onDrop = picture => {
+    console.log(this.state.pictures.concat(picture));
+    this.setState({
+      pictures: this.state.pictures.concat(picture)
+    });
   };
 
   onHandleChangeSubText = e => {
@@ -53,6 +62,14 @@ class PostCreate extends Component {
   render() {
     return (
       <div className="container">
+        <ImageUploader
+          withIcon={true}
+          buttonText="Choose images"
+          onChange={this.onDrop}
+          imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+          maxFileSize={5242880}
+        />
+
         <form onSubmit={this.onHandleSubmit}>
           <div className="form-group">
             <input

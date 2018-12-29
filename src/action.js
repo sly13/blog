@@ -8,6 +8,7 @@ export const createCategory = data => axios.post(`${apiUrl}/category`, data);
 export const deleteCategory = id => axios.delete(`${apiUrl}/category/${id}`);
 
 export const getPosts = () => axios.get(`${apiUrl}/post`);
+export const getTrendingPost = () => axios.get(`${apiUrl}/post-trending`);
 export const createPost = data => axios.post(`${apiUrl}/post`, data);
 export const getPost = id => axios.get(`${apiUrl}/post/${id}`);
 export const deletePost = id => axios.delete(`${apiUrl}/post/${id}`);

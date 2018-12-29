@@ -8,19 +8,20 @@ class MainNew extends Component {
 
   render() {
     const backgroundImageStyle1 = {
-      backgroundImage: `url(images/news/lifestyle/health5.jpg)`
+      backgroundImage: `url(../../../images/news/tea/nd86720.jpg)`
     };
 
     const backgroundImageStyle2 = {
-      backgroundImage: `url(images/news/tech/gadget2.jpg)`
+      backgroundImage: `url(../../../images/news/tea/2014_08_13_04_001.jpg)`
     };
 
     const backgroundImageStyle3 = {
-      backgroundImage: `url(images/news/lifestyle/travel5.jpg)`
+      backgroundImage: `url(../../../images/news/tea/chai-main.jpg)`
     };
 
     return (
       <>
+        <div class="gap-40" />
         <section className="featured-post-area no-padding">
           <div className="container">
             <div className="row">
@@ -107,7 +108,7 @@ class MainNew extends Component {
                         <a href="/">
                           <img
                             className="img-responsive"
-                            src="images/news/tech/gadget2.jpg"
+                            src="../../../images/news/tea/teapuerlogo.jpg"
                             alt=""
                           />
                         </a>
@@ -131,7 +132,7 @@ class MainNew extends Component {
                         <a href="/">
                           <img
                             className="img-responsive"
-                            src="images/news/tech/game1.jpg"
+                            src="../../../images/news/tea/8121e2.jpg"
                             alt=""
                           />
                         </a>

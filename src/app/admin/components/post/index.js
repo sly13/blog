@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Item from "./items";
-import { getPosts } from "../../action";
+import { getPosts } from "../../../../action";
 
 class PostList extends Component {
   state = {
@@ -39,7 +39,7 @@ class PostList extends Component {
                 </tr>
               </thead>
               <tbody>
-                <Item data={this.state.data} handler={this.handler} />
+                <Item data={data} />
               </tbody>
             </table>
           </>

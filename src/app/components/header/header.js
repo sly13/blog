@@ -1,27 +1,28 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   state = {};
   render() {
     return (
       <>
-        <header id="header" class="header">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <div class="logo">
-                  <a href="index.html">
-                    <img src="images/logos/logo.png" alt="" />
-                  </a>
+        <header id="header" className="header">
+          <div className="container">
+            <div className="row">
+              <div className="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <div className="logo">
+                  <Link to="/">
+                    <img src="../../../images/logo-new2.png" alt="" />
+                  </Link>
                 </div>
               </div>
 
-              <div class="col-xs-12 col-sm-9 col-md-9  col-lg-9 header-right">
-                <div class="pull-right">
+              <div className="col-xs-12 col-sm-7 col-md-7  col-lg-7 header-right">
+                <div className="pull-right">
                   <a href="/">
                     <img
-                      src="images/banner.png"
-                      class="img-responsive"
+                      src="../../../images/banner-tea5.png"
+                      className="img-responsive"
                       alt=""
                     />
                   </a>

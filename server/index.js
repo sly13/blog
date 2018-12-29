@@ -3,11 +3,19 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 8080;
 const cors = require("cors");
-
-var mysql = require("mysql");
+const multer = require("multer");
 
 const db = require("./api/category");
 const postDB = require("./api/post");
+
+const storage = multer.diskStorage({
+  destination: "./files",
+  filename(req, file, cb) {
+    cb(null, `${new Date()}-${file.originalname}`);
+  }
+});
+
+const upload = multer({ storage });
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -55,11 +63,24 @@ app.put("/category/:id", db.updateCategory);
 app.delete("/category/:id", db.deleteCategory);
 
 app.get("/post", postDB.getPosts);
+app.get("/post-trending", postDB.getTrendingPosts);
 app.get("/post/:id", postDB.getPostById);
-app.post("/post", postDB.createPost);
+//app.post("/post", postDB.createPost);
+app.post("/post", upload.single("file"), (req, res) => {
+  const file = req.file; 
+  const meta = req.body; 
+
+  
+});
 app.put("/post/:id", postDB.updatePost);
 app.delete("/post/:id", postDB.deletePost);
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);
+});
+
+app.use(function(req, res, next) {
+  const err = new Error("Not Found");
+  err.status = 404;
+  next(err);
 });
