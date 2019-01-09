@@ -6,7 +6,7 @@ class NewsLetters extends Component {
     return (
       <div className="widget m-bottom-0">
         <h3 className="block-title">
-          <span>Newsletter</span>
+          <span>Рассылка</span>
         </h3>
         <div className="ts-newsletter">
           <div className="newsletter-introtext">

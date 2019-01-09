@@ -1,30 +1,33 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { chunk } from "lodash";
 
 class Item extends Component {
   state = {};
   render() {
+    console.log("more array", this.props.data);
     const split = chunk(this.props.data, 4);
 
     const part1 = split[0].map(item => (
       <div key={item.id}>
         <div className="post-block-style post-float-half clearfix">
           <div className="post-thumb">
-            <a href="/">
+            <Link to={`/post/${item.postSlug}`}>
               <img className="img-fluid" src={item.imagePath} alt="" />
-            </a>
+            </Link>
           </div>
-          <a className="post-cat" href="/">
+          <Link className="post-cat" to={`/category/${item.categorySlug}`}>
             {item.category}
-          </a>
+          </Link>
+
           <div className="post-content">
             <h2 className="post-title">
-              <a href="/">{item.title}</a>
+              <Link to={`/post/${item.postSlug}`}>{item.title}</Link>
             </h2>
             <div className="post-meta">
-              <span className="post-author">
+              {/* <span className="post-author">
                 <a href="/">John Doe</a>
-              </span>
+              </span> */}
               <span className="post-date">Mar 29, 2017</span>
             </div>
             <p>{item.subText}</p>
@@ -38,21 +41,22 @@ class Item extends Component {
       <div key={item.id}>
         <div className="post-block-style post-float-half clearfix">
           <div className="post-thumb">
-            <a href="/">
+            <Link to={`/post/${item.postSlug}`}>
               <img className="img-fluid" src={item.imagePath} alt="" />
-            </a>
+            </Link>
           </div>
-          <a className="post-cat" href="/">
-            {item.category} {index}
-          </a>
+          <Link className="post-cat" to={`/category/${item.categorySlug}`}>
+            {item.category}
+          </Link>
+
           <div className="post-content">
             <h2 className="post-title">
-              <a href="/">{item.title}</a>
+              <Link to={`/post/${item.slug}`}>{item.title}</Link>
             </h2>
             <div className="post-meta">
-              <span className="post-author">
+              {/* <span className="post-author">
                 <a href="/">John Doe</a>
-              </span>
+              </span> */}
               <span className="post-date">Mar 29, 2017</span>
             </div>
             <p>{item.subText}</p>

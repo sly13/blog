@@ -24,6 +24,7 @@ const getTrendingPosts = (request, response) => {
 
 const getPostBySlug = (request, response) => {
   const slug = request.params.slug;
+  console.log(slug);
   const queryString =
     "SELECT post.id, name as category, title, subText, text, timeCreated FROM post LEFT JOIN category on category.id = post.categoryId WHERE post.slug = ?";
 
@@ -36,7 +37,8 @@ const getPostBySlug = (request, response) => {
 };
 
 const createPost = (request, response) => {
-  const { categoryId, title, subText, text } = request.body;
+  const { categoryId, title, subText, text, tags } = request.body;
+  console.log("tags", tags);
   const slug = transliterate(title);
   const queryString = "INSERT INTO post SET ?";
 
@@ -48,7 +50,8 @@ const createPost = (request, response) => {
         title,
         subText,
         text,
-        slug
+        slug,
+        tags
       }
     ],
     (error, results) => {
@@ -104,7 +107,7 @@ const deletePost = (request, response) => {
 };
 
 const getMoreNews = (request, response) => {
-  const queryString = `SELECT post.id, name as category, image.path as imagePath, title, subText, post.timeCreated FROM post 
+  const queryString = `SELECT post.id, name as category, post.slug as postSlug, category.slug as categorySlug, image.path as imagePath, title, subText, post.timeCreated FROM post 
   LEFT JOIN category on category.id = post.categoryId 
   LEFT JOIN image on image.id = post.imageId
   ORDER BY post.id ASC limit 8`;

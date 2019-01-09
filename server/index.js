@@ -67,7 +67,7 @@ app.get("/post/category/:slug", postDB.getNewsByCategory);
 app.get("/post", postDB.getPosts);
 app.get("/post-trending", postDB.getTrendingPosts);
 app.get("/post/:slug", postDB.getPostBySlug);
-//app.post("/post", postDB.createPost);
+app.post("/post", postDB.createPost);
 app.post("/post", upload.single("file"), (req, res) => {
   const file = req.file;
   const meta = req.body;

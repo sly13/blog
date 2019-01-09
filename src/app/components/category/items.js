@@ -6,30 +6,30 @@ class Items extends Component {
     console.log("props", this.props);
 
     const elements = this.props.data.map(item => (
-      <div class="col-md-6 col-sm-6" key={item.id}>
-        <div class="post-block-style post-grid clearfix">
-          <div class="post-thumb">
+      <div className="col-md-6 col-sm-6" key={item.id}>
+        <div className="post-block-style post-grid clearfix">
+          <div className="post-thumb">
             <a href="/">
-              <img class="img-responsive" src={item.imagePath} alt="" />
+              <img className="img-responsive" src={item.imagePath} alt="" />
             </a>
           </div>
-          <a class="post-cat" href="/">
+          <a className="post-cat" href="/">
             Travel
           </a>
-          <div class="post-content">
-            <h2 class="post-title title-large">
+          <div className="post-content">
+            <h2 className="post-title title-large">
               <a href="/">
                 Hynopedia helps female travelers find health care in Maldivs
               </a>
             </h2>
-            <div class="post-meta">
-              <span class="post-author">
+            <div className="post-meta">
+              <span className="post-author">
                 <a href="/">John Doe</a>
               </span>
-              <span class="post-date">Jan 09, 2017</span>
-              <span class="post-comment pull-right">
-                <i class="fa fa-comments-o" />
-                <a href="/" class="comments-link">
+              <span className="post-date">Jan 09, 2017</span>
+              <span className="post-comment pull-right">
+                <i className="fa fa-comments-o" />
+                <a href="/" className="comments-link">
                   <span>01</span>
                 </a>
               </span>

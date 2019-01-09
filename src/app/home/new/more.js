@@ -30,7 +30,7 @@ class More extends Component {
         {isLoaded && (
           <div className="more-news block color-default">
             <h3 className="block-title">
-              <span>More News</span>
+              <span>Новости</span>
             </h3>
 
             {/* <div id="more-news-slide" className="owl-carousel owl-theme more-news-slide"> */}

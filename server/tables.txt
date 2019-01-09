@@ -10,6 +10,7 @@ imageId int(11) Not Null,
 title varchar(50) Not Null,
 subText varchar(200) Not Null,
 text text Not Null,
+subText tags(200),
 timeCreated timestamp Not null,
 FOREIGN KEY (imageId) REFERENCES image(Id)
 FOREIGN KEY (categoryId) REFERENCES category(Id)

@@ -4,9 +4,9 @@ class Pagination extends Component {
   state = {};
   render() {
     return (
-      <div class="paging">
-        <ul class="pagination">
-          <li class="active">
+      <div className="paging">
+        <ul className="pagination">
+          <li className="active">
             <a href="/">1</a>
           </li>
           <li>
@@ -22,7 +22,7 @@ class Pagination extends Component {
             <a href="/">»</a>
           </li>
           <li>
-            <span class="page-numbers">Page 1 of 2</span>
+            <span className="page-numbers">Page 1 of 2</span>
           </li>
         </ul>
       </div>

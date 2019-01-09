@@ -6,7 +6,7 @@ class Popular extends Component {
     return (
       <div className="widget color-default">
         <h3 className="block-title">
-          <span>Popular News</span>
+          <span>Популярные</span>
         </h3>
 
         <div className="post-overaly-style clearfix">

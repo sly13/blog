@@ -6,11 +6,11 @@ class BreadCrumbs extends Component {
   render() {
     console.log(this.props);
     return (
-      <div class="page-title">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <ol class="breadcrumb">
+      <div className="page-title">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <ol className="breadcrumb">
                 <li>
                   <Link to="/">Главная</Link>
                 </li>

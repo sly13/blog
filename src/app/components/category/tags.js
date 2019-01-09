@@ -4,7 +4,7 @@ class Tags extends Component {
   state = {};
   render() {
     return (
-      <ul class="subCategory unstyled">
+      <ul className="subCategory unstyled">
         <li>
           <a href="/">Travel</a>
         </li>

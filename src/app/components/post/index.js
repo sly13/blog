@@ -18,6 +18,7 @@ class Index extends Component {
     console.log("here", this.props.match.params.slug);
     getPost(this.props.match.params.slug)
       .then(response => {
+        console.log("response", response.data);
         this.setState({ data: response.data, isLoaded: true });
       })
       .catch(error => {

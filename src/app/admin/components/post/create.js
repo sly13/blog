@@ -11,6 +11,7 @@ class PostCreate extends Component {
     title: "",
     subText: "",
     text: "",
+    tags: "",
     posts: {},
     pictures: []
   };
@@ -38,7 +39,8 @@ class PostCreate extends Component {
       categoryId: 2,
       title: this.state.title,
       subText: this.state.subText,
-      text: this.state.text
+      text: this.state.text,
+      tags: this.state.tags
     };
 
     createPost(post)
@@ -55,7 +57,8 @@ class PostCreate extends Component {
     this.setState({
       title: "",
       subText: "",
-      text: ""
+      text: "",
+      tags: ""
     });
   };
 
@@ -92,12 +95,27 @@ class PostCreate extends Component {
               placeholder="subText"
               onChange={this.onHandleChangeSubText}
             />
+            <br />
             <ReactQuill
               modules={PostCreate.modules}
               formats={PostCreate.formats}
               value={this.state.text}
               placeholder="text"
               onChange={this.onHandleChangeText}
+            />
+          </div>
+
+          <div className="form-group">
+            <input
+              value={this.state.tags}
+              type="text"
+              name="tags"
+              placeholder="Tags"
+              onChange={e => {
+                this.setState({ tags: e.target.value });
+              }}
+              ref="title"
+              className="form-control"
             />
           </div>
           <button className="btn btn-primary">Post</button>

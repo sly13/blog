@@ -5,7 +5,7 @@ class Title extends Component {
   render() {
     console.log(this.props);
     return (
-      <h3 class="block-title">
+      <h3 className="block-title">
         <span>{this.props.slug}</span>
       </h3>
     );
