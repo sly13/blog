@@ -1,8 +1,8 @@
 import React from "react";
-import FollowUs from "../right-sidebar/follow";
-import PopularNew from "../right-sidebar/popular";
-import Tags from "../right-sidebar/tags";
-import Newsletter from "../right-sidebar/newsletter";
+import FollowUs from "./follow";
+import PopularNew from "./popular";
+import Tags from "./tags";
+import Newsletter from "./newsletter";
 
 const SideBar = () => {
   return (

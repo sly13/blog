@@ -4,7 +4,7 @@ import { deleteCategory } from "../../../../action";
 
 class Item extends Component {
   handleDelete = id => {
-      deleteCategory(id)
+    deleteCategory(id)
       .then(response => {
         this.props.handler(this.props.data.filter(item => item.id !== id));
       })
@@ -18,6 +18,7 @@ class Item extends Component {
       <tr key={item.id}>
         <th scope="row">{item.id}</th>
         <td>{item.name}</td>
+        <td>{item.slug}</td>
         <td>
           <div
             className="btn-toolbar"

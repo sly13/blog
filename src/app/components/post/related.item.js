@@ -8,7 +8,7 @@ class RelatedItem extends Component {
         <div className="item">
           <div className="post-block-style clearfix">
             <div className="post-thumb">
-              <a href="#">
+              <a href="/">
                 <img
                   className="img-responsive"
                   src="../../../images/news/lifestyle/travel5.jpg"
@@ -16,18 +16,18 @@ class RelatedItem extends Component {
                 />
               </a>
             </div>
-            <a className="post-cat" href="#">
+            <a className="post-cat" href="/">
               Health
             </a>
             <div className="post-content">
               <h2 className="post-title title-medium">
-                <a href="#">
+                <a href="/">
                   Hynopedia helps female travelers find health care in Maldivs
                 </a>
               </h2>
               <div className="post-meta">
                 <span className="post-author">
-                  <a href="#">John Doe</a>
+                  <a href="/">John Doe</a>
                 </span>
                 <span className="post-date">Feb 19, 2017</span>
               </div>
@@ -38,7 +38,7 @@ class RelatedItem extends Component {
         <div className="item">
           <div className="post-block-style clearfix">
             <div className="post-thumb">
-              <a href="#">
+              <a href="/">
                 <img
                   className="img-responsive"
                   src="../../../images/news/lifestyle/health5.jpg"
@@ -46,16 +46,16 @@ class RelatedItem extends Component {
                 />
               </a>
             </div>
-            <a className="post-cat" href="#">
+            <a className="post-cat" href="/">
               Health
             </a>
             <div className="post-content">
               <h2 className="post-title title-medium">
-                <a href="#">Netcix cuts out the chill with an integrated...</a>
+                <a href="/">Netcix cuts out the chill with an integrated...</a>
               </h2>
               <div className="post-meta">
                 <span className="post-author">
-                  <a href="#">John Doe</a>
+                  <a href="/">John Doe</a>
                 </span>
                 <span className="post-date">Feb 19, 2017</span>
               </div>
@@ -66,7 +66,7 @@ class RelatedItem extends Component {
         <div className="item">
           <div className="post-block-style clearfix">
             <div className="post-thumb">
-              <a href="#">
+              <a href="/">
                 <img
                   className="img-responsive"
                   src="../../../images/news/lifestyle/travel3.jpg"
@@ -74,19 +74,19 @@ class RelatedItem extends Component {
                 />
               </a>
             </div>
-            <a className="post-cat" href="#">
+            <a className="post-cat" href="/">
               Travel
             </a>
             <div className="post-content">
               <h2 className="post-title title-medium">
-                <a href="#">
+                <a href="/">
                   This Aeroplane that looks like a butt is the largest aircraft
                   in the world
                 </a>
               </h2>
               <div className="post-meta">
                 <span className="post-author">
-                  <a href="#">John Doe</a>
+                  <a href="/">John Doe</a>
                 </span>
                 <span className="post-date">Feb 19, 2017</span>
               </div>
@@ -97,7 +97,7 @@ class RelatedItem extends Component {
         <div className="item">
           <div className="post-block-style clearfix">
             <div className="post-thumb">
-              <a href="#">
+              <a href="/">
                 <img
                   className="img-responsive"
                   src="../../../images/news/lifestyle/travel4.jpg"
@@ -105,18 +105,18 @@ class RelatedItem extends Component {
                 />
               </a>
             </div>
-            <a className="post-cat" href="#">
+            <a className="post-cat" href="/">
               Travel
             </a>
             <div className="post-content">
               <h2 className="post-title title-medium">
-                <a href="#">
+                <a href="/">
                   19 incredible photos from Disney's 'Star Wars' cruise algore
                 </a>
               </h2>
               <div className="post-meta">
                 <span className="post-author">
-                  <a href="#">John Doe</a>
+                  <a href="/">John Doe</a>
                 </span>
                 <span className="post-date">Feb 19, 2017</span>
               </div>

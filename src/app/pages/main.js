@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import MainNew from "../home/mainNew/mainNew";
-import MainBlock from "../home/mainBlock/mainBlock";
+// import MainBlock from "../home/mainBlock/mainBlock";
 import New from "../home/new/index";
 
 class Main extends Component {
@@ -10,7 +10,7 @@ class Main extends Component {
     return (
       <>
         <MainNew />
-        <MainBlock />
+        {/* <MainBlock /> */}
         <New />
       </>
     );

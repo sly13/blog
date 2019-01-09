@@ -62,18 +62,22 @@ app.post("/category", db.createCategory);
 app.put("/category/:id", db.updateCategory);
 app.delete("/category/:id", db.deleteCategory);
 
+app.get("/post/category/:slug", postDB.getNewsByCategory);
+
 app.get("/post", postDB.getPosts);
 app.get("/post-trending", postDB.getTrendingPosts);
-app.get("/post/:id", postDB.getPostById);
+app.get("/post/:slug", postDB.getPostBySlug);
 //app.post("/post", postDB.createPost);
 app.post("/post", upload.single("file"), (req, res) => {
-  const file = req.file; 
-  const meta = req.body; 
-
-  
+  const file = req.file;
+  const meta = req.body;
 });
+
 app.put("/post/:id", postDB.updatePost);
 app.delete("/post/:id", postDB.deletePost);
+
+app.get("/post-more", postDB.getMoreNews);
+app.get("/post-popular", postDB.getPopularNews);
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);

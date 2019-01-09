@@ -7,7 +7,7 @@ class CommentForm extends Component {
       <div className="comments-form">
         <h3 className="title-normal">Leave a comment</h3>
 
-        <form role="form">
+        <form>
           <div className="row">
             <div className="col-md-12">
               <div className="form-group">

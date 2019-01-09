@@ -33,7 +33,7 @@ class Comments extends Component {
                   </p>
                 </div>
                 <div className="text-left">
-                  <a className="comment-reply" href="#">
+                  <a className="comment-reply" href="/">
                     Reply
                   </a>
                 </div>
@@ -63,7 +63,7 @@ class Comments extends Component {
                       </p>
                     </div>
                     <div className="text-left">
-                      <a className="comment-reply" href="#">
+                      <a className="comment-reply" href="/">
                         Reply
                       </a>
                     </div>
@@ -93,7 +93,7 @@ class Comments extends Component {
                   </p>
                 </div>
                 <div className="text-left">
-                  <a className="comment-reply" href="#">
+                  <a className="comment-reply" href="/">
                     Reply
                   </a>
                 </div>

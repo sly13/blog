@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           LOGO
         </a>
         <button
@@ -24,7 +24,7 @@ class Header extends Component {
         <div className="collapse navbar-collapse" id="navbar1">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="http://bootstrap-ecommerce.com">
+              <a className="nav-link" href="/admin">
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>

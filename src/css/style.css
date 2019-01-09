@@ -3132,3 +3132,10 @@ a:visited {
 .dropdown-menu .mega-menu-content .clearfix {
   padding-top:0px;
 }
+
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}

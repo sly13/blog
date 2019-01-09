@@ -10,8 +10,9 @@ import CategoryList from "./app/admin/components/categoty";
 import CategoryCreate from "./app/admin/components/categoty/create";
 import PostList from "./app/admin/components/post";
 import Post from "./app/components/post";
+import NewsByTag from "./app/components/category/index";
 import PostCreate from "./app/admin/components/post/create";
-import PostView from "./app/admin/components/post/view";
+import Author from "./app/components/author";
 import { Route } from "react-router4-with-layouts";
 
 const history = createBrowserHistory();
@@ -22,7 +23,13 @@ class App extends Component {
       <Router history={history}>
         <Switch>
           <Route exact path="/" layout={DefaultLayout} component={Main} />
-          <Route path="/post/:id" layout={DefaultLayout} component={Post} />
+          <Route path="/post/:slug" layout={DefaultLayout} component={Post} />
+          <Route path="/author" layout={DefaultLayout} component={Author} />
+          <Route
+            path="/category/:slug"
+            layout={DefaultLayout}
+            component={NewsByTag}
+          />
           <Route path="/admin" layout={AdminLayout} component={Admin} />
           <Route
             path="/category-list"
@@ -61,13 +68,6 @@ class App extends Component {
         </div>*/}
       </Router>
     );
-  }
-}
-
-class Test extends Component {
-  state = {};
-  render() {
-    return <h1>Test1</h1>;
   }
 }
 

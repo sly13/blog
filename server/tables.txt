@@ -6,9 +6,19 @@ name varchar(50)
 CREATE TABLE post (
 id int(11) NOT NULL PRIMARY KEY auto_increment,
 categoryId int(11) Not Null,
+imageId int(11) Not Null,
 title varchar(50) Not Null,
 subText varchar(200) Not Null,
 text text Not Null,
 timeCreated timestamp Not null,
+FOREIGN KEY (imageId) REFERENCES image(Id)
 FOREIGN KEY (categoryId) REFERENCES category(Id)
 )
+
+CREATE TABLE image(
+id int(11) NOT NULL PRIMARY KEY auto_increment,
+path varchar(250),
+timeCreated timestamp Not null
+); 
+
+alter table post add imageId varchar(200) after categoryId 

@@ -16,10 +16,9 @@ class Trending extends Component {
   componentDidMount() {
     getTrendingPost()
       .then(response => {
-        console.log("response.data", response.data);
         this.setState({ data: response.data, isLoaded: true });
       })
-      .catch(function(error) {
+      .catch(error => {
         console.log(error);
       });
   }

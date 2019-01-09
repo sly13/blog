@@ -1,4 +1,5 @@
 const { connection } = require("../connect");
+const { transliterate } = require("../helper");
 
 const getPosts = (request, response) => {
   const queryString = `SELECT post.id, name as category, title, subText, text, timeCreated FROM post 
@@ -12,7 +13,7 @@ const getPosts = (request, response) => {
 };
 
 const getTrendingPosts = (request, response) => {
-  const queryString = `Select id, title from post order by timeCreated DESC limit 3`;
+  const queryString = `Select id, title, slug from post order by timeCreated DESC limit 3`;
   connection.query(queryString, (error, results) => {
     if (error) {
       throw error;
@@ -21,11 +22,12 @@ const getTrendingPosts = (request, response) => {
   });
 };
 
-const getPostById = (request, response) => {
-  const id = parseInt(request.params.id);
-  const queryString = "SELECT * FROM post WHERE id = ?";
+const getPostBySlug = (request, response) => {
+  const slug = request.params.slug;
+  const queryString =
+    "SELECT post.id, name as category, title, subText, text, timeCreated FROM post LEFT JOIN category on category.id = post.categoryId WHERE post.slug = ?";
 
-  connection.query(queryString, id, (error, results) => {
+  connection.query(queryString, slug, (error, results) => {
     if (error) {
       throw error;
     }
@@ -35,8 +37,7 @@ const getPostById = (request, response) => {
 
 const createPost = (request, response) => {
   const { categoryId, title, subText, text } = request.body;
-
-  console.log(categoryId, title, subText, text);
+  const slug = transliterate(title);
   const queryString = "INSERT INTO post SET ?";
 
   connection.query(
@@ -46,7 +47,8 @@ const createPost = (request, response) => {
         categoryId,
         title,
         subText,
-        text
+        text,
+        slug
       }
     ],
     (error, results) => {
@@ -101,11 +103,55 @@ const deletePost = (request, response) => {
   });
 };
 
+const getMoreNews = (request, response) => {
+  const queryString = `SELECT post.id, name as category, image.path as imagePath, title, subText, post.timeCreated FROM post 
+  LEFT JOIN category on category.id = post.categoryId 
+  LEFT JOIN image on image.id = post.imageId
+  ORDER BY post.id ASC limit 8`;
+
+  connection.query(queryString, (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(200).json(results);
+  });
+};
+
+const getPopularNews = (request, response) => {
+  const queryString = `SELECT post.id, name as category, title, timeCreated FROM post 
+  LEFT JOIN category on category.id = post.categoryId ORDER BY id ASC limit 4`;
+
+  connection.query(queryString, (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(200).json(results);
+  });
+};
+
+const getNewsByCategory = (request, response) => {
+  const slug = request.params.slug;
+  console.log("getNewsByCategory", slug);
+  const queryString =
+    "SELECT post.id, name as category, image.path as imagePath, title, subText, text, post.timeCreated FROM post LEFT JOIN category on category.id = post.categoryId LEFT JOIN image on image.id = post.imageId WHERE category.id = (Select id from category where slug = ?)";
+
+  connection.query(queryString, slug, (error, results) => {
+    if (error) {
+      throw error;
+    }
+
+    response.status(200).json(results);
+  });
+};
+
 module.exports = {
   getPosts,
   getTrendingPosts,
-  getPostById,
+  getPostBySlug,
   createPost,
   updatePost,
-  deletePost
+  deletePost,
+  getMoreNews,
+  getPopularNews,
+  getNewsByCategory
 };

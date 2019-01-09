@@ -21,7 +21,7 @@ class MainNew extends Component {
 
     return (
       <>
-        <div class="gap-40" />
+        <div className="gap-40" />
         <section className="featured-post-area no-padding">
           <div className="container">
             <div className="row">

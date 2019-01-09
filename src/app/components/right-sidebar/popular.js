@@ -10,21 +10,21 @@ class PopularNew extends Component {
 
         <div className="post-overaly-style clearfix">
           <div className="post-thumb">
-            <a href="#">
+            <a href="/">
               <img
                 className="img-responsive"
-                src="images/news/lifestyle/health4.jpg"
+                src="../../../images/news/lifestyle/health4.jpg"
                 alt=""
               />
             </a>
           </div>
 
           <div className="post-content">
-            <a className="post-cat" href="#">
+            <a className="post-cat" href="/">
               Health
             </a>
             <h2 className="post-title title-small">
-              <a href="#">
+              <a href="/">
                 Smart packs parking sensor tech and beeps when col…
               </a>
             </h2>
@@ -39,21 +39,21 @@ class PopularNew extends Component {
             <li className="clearfix">
               <div className="post-block-style post-float clearfix">
                 <div className="post-thumb">
-                  <a href="#">
+                  <a href="/">
                     <img
                       className="img-responsive"
-                      src="images/news/tech/gadget3.jpg"
+                      src="../../../images/news/tech/gadget3.jpg"
                       alt=""
                     />
                   </a>
-                  <a className="post-cat" href="#">
+                  <a className="post-cat" href="/">
                     Gadgets
                   </a>
                 </div>
 
                 <div className="post-content">
                   <h2 className="post-title title-small">
-                    <a href="#">
+                    <a href="/">
                       Panasonic's new Sumix CH7 an ultra portable filmmaker's
                       drea…
                     </a>
@@ -68,21 +68,21 @@ class PopularNew extends Component {
             <li className="clearfix">
               <div className="post-block-style post-float clearfix">
                 <div className="post-thumb">
-                  <a href="#">
+                  <a href="/">
                     <img
                       className="img-responsive"
-                      src="images/news/lifestyle/travel5.jpg"
+                      src="../../../images/news/lifestyle/travel5.jpg"
                       alt=""
                     />
                   </a>
-                  <a className="post-cat" href="#">
+                  <a className="post-cat" href="/">
                     Travel
                   </a>
                 </div>
 
                 <div className="post-content">
                   <h2 className="post-title title-small">
-                    <a href="#">
+                    <a href="/">
                       Hynopedia helps female travelers find health care...
                     </a>
                   </h2>
@@ -96,21 +96,21 @@ class PopularNew extends Component {
             <li className="clearfix">
               <div className="post-block-style post-float clearfix">
                 <div className="post-thumb">
-                  <a href="#">
+                  <a href="/">
                     <img
                       className="img-responsive"
-                      src="images/news/tech/robot5.jpg"
+                      src="../../../images/news/tech/robot5.jpg"
                       alt=""
                     />
                   </a>
-                  <a className="post-cat" href="#">
+                  <a className="post-cat" href="/">
                     Robotics
                   </a>
                 </div>
 
                 <div className="post-content">
                   <h2 className="post-title title-small">
-                    <a href="#">
+                    <a href="/">
                       Robots in hospitals can be quite handy to navigate
                       around...
                     </a>
@@ -125,21 +125,21 @@ class PopularNew extends Component {
             <li className="clearfix">
               <div className="post-block-style post-float clearfix">
                 <div className="post-thumb">
-                  <a href="#">
+                  <a href="/">
                     <img
                       className="img-responsive"
-                      src="images/news/lifestyle/food1.jpg"
+                      src="../../../images/news/lifestyle/food1.jpg"
                       alt=""
                     />
                   </a>
-                  <a className="post-cat" href="#">
+                  <a className="post-cat" href="/">
                     Food
                   </a>
                 </div>
 
                 <div className="post-content">
                   <h2 className="post-title title-small">
-                    <a href="#">
+                    <a href="/">
                       Tacos ditched the naked chicken chalupa, so here's how…
                     </a>
                   </h2>

@@ -1,4 +1,5 @@
 const { connection } = require("../connect");
+const { transliterate } = require("../helper");
 
 const getCategories = (request, response) => {
   const queryString = "SELECT * FROM category ORDER BY id ASC";
@@ -28,9 +29,9 @@ const getCategoryById = (request, response) => {
 
 const createCategory = (request, response) => {
   const { name } = request.body;
-  console.log(name, request.body);
-  const queryString = "INSERT INTO category SET name = ?";
-  connection.query(queryString, [name], (error, results) => {
+  const slug = transliterate(name);
+  const queryString = "INSERT INTO category SET name = ?, slug = ?";
+  connection.query(queryString, [name, slug], (error, results) => {
     if (error) {
       console.log("Failed to query for categoty: " + error);
       response.sendStatus(500);

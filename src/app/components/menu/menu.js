@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Search from "./search";
+import { Link } from "react-router-dom";
 import $ from "jquery";
+import { withRouter } from "react-router";
+
 class Menu extends Component {
   componentDidMount() {
     $(".nav.navbar-nav li a").on("click", function() {
@@ -43,7 +46,7 @@ class Menu extends Component {
                     className="collapse navbar-collapse navbar-responsive-collapse"
                   >
                     <ul className="nav navbar-nav">
-                      <li className="nav-item dropdown active">
+                      {/* <li className="nav-item dropdown active">
                         <a href="/" className="nav-link" data-toggle="dropdown">
                           Home <i className="fa fa-angle-down" />
                         </a>
@@ -64,9 +67,9 @@ class Menu extends Component {
                             <a href="index-5.html">Home 5</a>
                           </li>
                         </ul>
-                      </li>
+                      </li> */}
 
-                      <li className="nav-item dropdown mega-dropdown">
+                      {/* <li className="nav-item dropdown mega-dropdown">
                         <a
                           href="category-style1.html"
                           className="nav-link dropdown-toggle"
@@ -458,12 +461,34 @@ class Menu extends Component {
                             </div>
                           </div>
                         </div>
-                      </li>
+                      </li> */}
 
+                      <li className="active">
+                        <Link to="/category/vse-o-chae">Всё о чае</Link>
+                      </li>
                       <li>
-                        <a href="category-style2.html">Technology</a>
+                        <Link to="/category/zelenii-chai">Зеленый чай</Link>
                       </li>
-
+                      <li>
+                        <Link to="/chernii-chai">Черный чай</Link>
+                      </li>
+                      <li>
+                        <Link to="/category/kitaiskii-chai">Китайский чай</Link>
+                      </li>
+                      <li>
+                        <Link to="/category/prigotovlenie-chaya">
+                          Приготовление чая
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/category/istoriya-chaya">История чая</Link>
+                      </li>
+                      <li>
+                        <Link to="/category/chainaya-posuda">
+                          Чайная посуда
+                        </Link>
+                      </li>
+                      {/* 
                       <li className="dropdown nav-item mega-dropdown">
                         <a
                           href="/"
@@ -688,7 +713,7 @@ class Menu extends Component {
                             </ul>
                           </li>
                         </ul>
-                      </li>
+                      </li>*/}
                     </ul>
                   </div>
                 </div>
@@ -703,4 +728,4 @@ class Menu extends Component {
   }
 }
 
-export default Menu;
+export default withRouter(Menu);

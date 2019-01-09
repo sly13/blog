@@ -9,7 +9,7 @@ class Item extends Component {
       <div className="item" key={item.id}>
         <div className="post-content">
           <h2 className="post-title title-small">
-            <Link to={`/post/${item.id}`}>{item.title}</Link>
+            <Link to={`/post/${item.slug}`}>{item.title}</Link>
           </h2>
         </div>
       </div>

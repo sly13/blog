@@ -8,8 +8,8 @@ class PostView extends Component {
   };
 
   componentWillMount() {
-    console.log(this.props.match.params.id);
-    getPost(this.props.match.params.id)
+    console.log("here", this.props.match.params.slug);
+    getPost(this.props.match.params.slug)
       .then(res => {
         this.setState({ post: res.data });
       })
