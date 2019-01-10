@@ -6,12 +6,14 @@ name varchar(50)
 CREATE TABLE post (
 id int(11) NOT NULL PRIMARY KEY auto_increment,
 categoryId int(11) Not Null,
+views int(11) default '0',
 imageId int(11) Not Null,
 title varchar(50) Not Null,
 subText varchar(200) Not Null,
 text text Not Null,
 subText tags(200),
-timeCreated timestamp Not null,
+timeUpdated timestamp Not null,
+timeCreated timestamp,
 FOREIGN KEY (imageId) REFERENCES image(Id)
 FOREIGN KEY (categoryId) REFERENCES category(Id)
 )

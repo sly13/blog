@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import More from "./more";
-import Popular from "./popular";
-import NewsLetters from "./newsLetters";
+import SideBar from "../../components/right-sidebar/index";
 
 class Index extends Component {
   state = {};
@@ -15,13 +14,7 @@ class Index extends Component {
                 <More />
               </div>
 
-              <div className="col-lg-4 col-md-12">
-                <div className="sidebar sidebar-right">
-                  <Popular />
-
-                  <NewsLetters />
-                </div>
-              </div>
+              <SideBar />
             </div>
           </div>
         </section>

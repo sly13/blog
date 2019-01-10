@@ -7,6 +7,7 @@ import renderHTML from "react-render-html";
 
 import { getPost } from "../../../action";
 import BreadCrumbs from "../breadcrumbs";
+import { getFormatedDate } from "../../../helper";
 
 class Index extends Component {
   state = {
@@ -15,8 +16,17 @@ class Index extends Component {
   };
 
   componentDidMount() {
-    console.log("here", this.props.match.params.slug);
-    getPost(this.props.match.params.slug)
+    this.getData(this.props.match.params.slug);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.match.params.slug !== nextProps.match.params.slug) {
+      this.getData(nextProps.match.params.slug);
+    }
+  }
+
+  getData = slug => {
+    getPost(slug)
       .then(response => {
         console.log("response", response.data);
         this.setState({ data: response.data, isLoaded: true });
@@ -24,11 +34,12 @@ class Index extends Component {
       .catch(error => {
         console.log(error);
       });
-  }
+  };
 
   render() {
-    console.log("this.state.post", this.state.data);
-    const { title, category, text } = this.state.data;
+    console.log("this.state.post", this.state.data.timeCreated);
+    const { title, category, text, views, timeCreated } = this.state.data;
+
     return (
       <>
         {this.state.isLoaded && (
@@ -52,10 +63,11 @@ class Index extends Component {
                             By <a href="/">John Doe</a>
                           </span>
                           <span className="post-date">
-                            <i className="fa fa-clock-o" /> March 14, 2017
+                            <i className="fa fa-clock-o" />{" "}
+                            {timeCreated && getFormatedDate(timeCreated)}
                           </span>
                           <span className="post-hits">
-                            <i className="fa fa-eye" /> 21
+                            <i className="fa fa-eye" /> {views}
                           </span>
                           <span className="post-comment">
                             <i className="fa fa-comments-o" />

@@ -24,13 +24,11 @@ class PostCreate extends Component {
   };
 
   onHandleChangeSubText = e => {
-    this.setState({ subText: e });
-    console.log(this.state.subText);
+    this.setState({ subText: e.replace(/<\/?[^>]+>/g, "") });
   };
 
   onHandleChangeText = e => {
-    this.setState({ text: e });
-    console.log(this.state.text);
+    this.setState({ text: e.replace(/<\/?[^>]+>/g, "") });
   };
 
   onHandleSubmit = e => {

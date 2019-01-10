@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { chunk } from "lodash";
+import { getFormatedDate } from "../../../helper";
 
 class Item extends Component {
   state = {};
@@ -28,7 +29,9 @@ class Item extends Component {
               {/* <span className="post-author">
                 <a href="/">John Doe</a>
               </span> */}
-              <span className="post-date">Mar 29, 2017</span>
+              <span className="post-date">
+                {getFormatedDate(item.timeCreated)}
+              </span>
             </div>
             <p>{item.subText}</p>
           </div>
@@ -51,13 +54,15 @@ class Item extends Component {
 
           <div className="post-content">
             <h2 className="post-title">
-              <Link to={`/post/${item.slug}`}>{item.title}</Link>
+              <Link to={`/post/${item.postSlug}`}>{item.title}</Link>
             </h2>
             <div className="post-meta">
               {/* <span className="post-author">
                 <a href="/">John Doe</a>
               </span> */}
-              <span className="post-date">Mar 29, 2017</span>
+              <span className="post-date">
+                {getFormatedDate(item.timeCreated)}
+              </span>
             </div>
             <p>{item.subText}</p>
           </div>

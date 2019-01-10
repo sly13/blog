@@ -9,13 +9,21 @@ import { getNewsByCategory } from "../../../action";
 class NewsByTag extends Component {
   state = {
     data: [],
-    isLoaded: false,
-    test: 1
+    isLoaded: false
   };
 
   componentDidMount() {
-    console.log("here", this.props.match.params.slug);
-    getNewsByCategory(this.props.match.params.slug)
+    this.getData(this.props.match.params.slug);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.match.params.slug !== nextProps.match.params.slug) {
+      this.getData(nextProps.match.params.slug);
+    }
+  }
+
+  getData = slug => {
+    getNewsByCategory(slug)
       .then(response => {
         console.log("by Slug", response.data);
         this.setState({ data: response.data, isLoaded: true });
@@ -23,7 +31,7 @@ class NewsByTag extends Component {
       .catch(error => {
         console.log(error);
       });
-  }
+  };
 
   render() {
     const { isLoaded, data } = this.state;

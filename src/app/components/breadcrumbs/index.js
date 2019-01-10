@@ -14,9 +14,7 @@ class BreadCrumbs extends Component {
                 <li>
                   <Link to="/">Главная</Link>
                 </li>
-                <li>
-                  <Link to={this.props.link}>{this.props.page}</Link>
-                </li>
+                <li>{this.props.page}</li>
               </ol>
             </div>
           </div>

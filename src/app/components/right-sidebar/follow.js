@@ -5,7 +5,7 @@ class FollowUs extends Component {
     return (
       <div className="widget">
         <h3 className="block-title">
-          <span>Follow Us</span>
+          <span>Следи за нами</span>
         </h3>
 
         <ul className="social-icon">

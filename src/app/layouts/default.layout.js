@@ -6,6 +6,11 @@ import Menu from "../components/menu/menu";
 import Trending from "../components/trending/trending";
 import Footer from "../components/footer/footer";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+
+import "bootstrap/dist/js/bootstrap.js";
+
 import "../../css/style.css";
 
 import "../../css/responsive.css";

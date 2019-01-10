@@ -1,26 +1,10 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { getFormatedDate } from "../../../helper";
 
 class PreHeader extends Component {
   render() {
-    const monthNames = [
-      "Январь",
-      "Февраль",
-      "Март",
-      "Апрель",
-      "Май",
-      "Июнь",
-      "Июль",
-      "Август",
-      "Сентяюрь",
-      "Окстябрь",
-      "Ноябрь",
-      "Декабрь"
-    ];
-
-    const date = new Date();
-    const string = `${
-      monthNames[date.getMonth()]
-    } ${date.getDate()}, ${date.getFullYear()}`;
+    const string = getFormatedDate(new Date());
 
     return (
       <>
@@ -34,11 +18,11 @@ class PreHeader extends Component {
                 </div>
                 <ul className="unstyled top-nav">
                   <li>
-                    <a href="/">О нас</a>
+                    <Link to="/author">О нас</Link>
                   </li>
 
                   <li>
-                    <a href="/">Контакты</a>
+                    <Link to="/contact">Контакты</Link>
                   </li>
                 </ul>
               </div>

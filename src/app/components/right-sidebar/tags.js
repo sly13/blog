@@ -5,7 +5,7 @@ class Tags extends Component {
     return (
       <div className="widget widget-tags">
         <h3 className="block-title">
-          <span>Tags</span>
+          <span>Теги</span>
         </h3>
         <ul className="unstyled clearfix">
           <li>

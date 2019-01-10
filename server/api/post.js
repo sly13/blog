@@ -26,7 +26,7 @@ const getPostBySlug = (request, response) => {
   const slug = request.params.slug;
   console.log(slug);
   const queryString =
-    "SELECT post.id, name as category, title, subText, text, timeCreated FROM post LEFT JOIN category on category.id = post.categoryId WHERE post.slug = ?";
+    "SELECT post.id, name as category, views, title, subText, text, timeCreated FROM post LEFT JOIN category on category.id = post.categoryId WHERE post.slug = ?";
 
   connection.query(queryString, slug, (error, results) => {
     if (error) {
@@ -34,12 +34,23 @@ const getPostBySlug = (request, response) => {
     }
     response.status(200).json(results[0]);
   });
+
+  connection.query(
+    `UPDATE post SET views = views + 1 WHERE slug = ?`,
+    slug,
+    (error, results) => {
+      if (error) {
+        throw error;
+      }
+      console.log("views update success");
+    }
+  );
 };
 
 const createPost = (request, response) => {
   const { categoryId, title, subText, text, tags } = request.body;
-  console.log("tags", tags);
   const slug = transliterate(title);
+  const timeCreated = new Date();
   const queryString = "INSERT INTO post SET ?";
 
   connection.query(
@@ -51,7 +62,8 @@ const createPost = (request, response) => {
         subText,
         text,
         slug,
-        tags
+        tags,
+        timeCreated
       }
     ],
     (error, results) => {
@@ -110,7 +122,7 @@ const getMoreNews = (request, response) => {
   const queryString = `SELECT post.id, name as category, post.slug as postSlug, category.slug as categorySlug, image.path as imagePath, title, subText, post.timeCreated FROM post 
   LEFT JOIN category on category.id = post.categoryId 
   LEFT JOIN image on image.id = post.imageId
-  ORDER BY post.id ASC limit 8`;
+  ORDER BY post.timeCreated DESC limit 8`;
 
   connection.query(queryString, (error, results) => {
     if (error) {
@@ -121,8 +133,10 @@ const getMoreNews = (request, response) => {
 };
 
 const getPopularNews = (request, response) => {
-  const queryString = `SELECT post.id, name as category, title, timeCreated FROM post 
-  LEFT JOIN category on category.id = post.categoryId ORDER BY id ASC limit 4`;
+  const queryString = `SELECT post.id, name as category, post.slug as postSlug, category.slug as categorySlug, image.path as imagePath, title, post.timeCreated FROM post 
+  LEFT JOIN category on category.id = post.categoryId 
+  LEFT JOIN image on image.id = post.imageId
+  ORDER BY post.views DESC limit 4`;
 
   connection.query(queryString, (error, results) => {
     if (error) {
@@ -156,5 +170,6 @@ module.exports = {
   deletePost,
   getMoreNews,
   getPopularNews,
-  getNewsByCategory
+  getNewsByCategory,
+  
 };

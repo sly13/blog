@@ -13,6 +13,7 @@ export const getTrendingPost = () => axios.get(`${apiUrl}/post-trending`);
 export const createPost = data => axios.post(`${apiUrl}/post`, data);
 export const getPost = slug => axios.get(`${apiUrl}/post/${slug}`);
 export const getMoreNews = id => axios.get(`${apiUrl}/post-more`);
+export const getPopularNews = () => axios.get(`${apiUrl}/post-popular`);
 export const deletePost = id => axios.delete(`${apiUrl}/post/${id}`);
 
 //export const getPostInfo = id => axios.get(`${apiUrl}/posts/${id}`);

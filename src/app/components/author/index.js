@@ -1,5 +1,7 @@
 import React from "react";
-import BreadCrumbs from "../breadcrumbs/index";
+import BreadCrumbs from "../breadcrumbs";
+import SideBar from "../right-sidebar";
+
 const Author = () => {
   return (
     <>
@@ -48,6 +50,7 @@ const Author = () => {
                 </div>
               </div>
             </div>
+            <SideBar />
           </div>
         </div>
       </section>

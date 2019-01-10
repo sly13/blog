@@ -13,6 +13,7 @@ import Post from "./app/components/post";
 import NewsByTag from "./app/components/category/index";
 import PostCreate from "./app/admin/components/post/create";
 import Author from "./app/components/author";
+import Contact from "./app/components/contact";
 import { Route } from "react-router4-with-layouts";
 import ScrollToTop from "./ScrollToTop";
 
@@ -27,6 +28,8 @@ class App extends Component {
             <Route exact path="/" layout={DefaultLayout} component={Main} />
             <Route path="/post/:slug" layout={DefaultLayout} component={Post} />
             <Route path="/author" layout={DefaultLayout} component={Author} />
+            <Route path="/contact" layout={DefaultLayout} component={Contact} />
+            <Route path="/about" layout={DefaultLayout} component={Author} />
             <Route
               path="/category/:slug"
               layout={DefaultLayout}
