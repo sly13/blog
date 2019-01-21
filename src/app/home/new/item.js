@@ -2,16 +2,26 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { chunk } from "lodash";
 import { getFormatedDate } from "../../../helper";
+import { withRouter } from "react-router";
 
 class Item extends Component {
   state = {};
+
+  redirect = path => {
+    console.log(path);
+    this.props.history.push(`/post/${path}`);
+  };
+
   render() {
     console.log("more array", this.props.data);
     const split = chunk(this.props.data, 4);
 
     const part1 = split[0].map(item => (
       <div key={item.id}>
-        <div className="post-block-style post-float-half clearfix">
+        <div
+          className="post-block-style post-float-half clearfix"
+          onClick={() => this.redirect(item.postSlug)}
+        >
           <div className="post-thumb">
             <Link to={`/post/${item.postSlug}`}>
               <img className="img-fluid" src={item.imagePath} alt="" />
@@ -80,4 +90,4 @@ class Item extends Component {
   }
 }
 
-export default Item;
+export default withRouter(Item);

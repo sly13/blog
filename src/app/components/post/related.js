@@ -22,7 +22,7 @@ class RelatedPosts extends Component {
           autoplay={false}
           autoplayHoverPause={true}
           nav={true}
-          //margin='30'
+          margin={30}
           dots={false}
           mouseDrag={false}
           //slideSpeed={500}

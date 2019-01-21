@@ -24,11 +24,11 @@ class PostCreate extends Component {
   };
 
   onHandleChangeSubText = e => {
-    this.setState({ subText: e.replace(/<\/?[^>]+>/g, "") });
+    this.setState({ subText: e });
   };
 
   onHandleChangeText = e => {
-    this.setState({ text: e.replace(/<\/?[^>]+>/g, "") });
+    this.setState({ text: e });
   };
 
   onHandleSubmit = e => {
@@ -36,8 +36,8 @@ class PostCreate extends Component {
     const post = {
       categoryId: 2,
       title: this.state.title,
-      subText: this.state.subText,
-      text: this.state.text,
+      subText: this.state.subText.replace(/<\/?[^>]+>/g, ""),
+      text: this.state.text.replace(/<\/?[^>]+>/g, ""),
       tags: this.state.tags
     };
 

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class MainBlock extends Component {
   state = {};
+
   render() {
     return (
       <>

@@ -12,6 +12,8 @@ title varchar(50) Not Null,
 subText varchar(200) Not Null,
 text text Not Null,
 subText tags(200),
+priority int(11) default 0,
+tags varchar(200),
 timeUpdated timestamp Not null,
 timeCreated timestamp,
 FOREIGN KEY (imageId) REFERENCES image(Id)
@@ -21,6 +23,12 @@ FOREIGN KEY (categoryId) REFERENCES category(Id)
 CREATE TABLE image(
 id int(11) NOT NULL PRIMARY KEY auto_increment,
 path varchar(250),
+timeCreated timestamp Not null
+); 
+
+CREATE TABLE subscriber (
+id int(11) NOT NULL PRIMARY KEY auto_increment,
+email varchar(200) not null,
 timeCreated timestamp Not null
 ); 
 

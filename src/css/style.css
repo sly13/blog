@@ -561,6 +561,7 @@ a[href^="tel"] {
   line-height: 26px;
   margin-top: 15px;
   margin-bottom: 5px;
+  min-height: 52px;
 }
 
 .post-title.title-medium {
@@ -2377,9 +2378,10 @@ ul.navbar-nav > li.mega-dropdown {
 /*-- Footer Info --*/
 
 .footer-info-content {
-  border-top: 1px solid #606060;
-  margin-top: 50px;
-  padding: 50px 250px 0;
+  /* border-top: 1px solid #606060; */
+  /* margin-top: 50px; */
+  /* padding: 50px 250px 0; */
+  padding: 0px 250px 0;
 }
 
 .footer-info-content p {
@@ -2561,7 +2563,8 @@ ul.navbar-nav > li.mega-dropdown {
 
 .post-grid {
   margin-bottom: 15px;
-  min-height: 455px;
+  /* min-height: 455px; */
+  min-height: 400px;
 }
 
 /* Post list */
@@ -3141,10 +3144,13 @@ button::-moz-focus-inner {
   border: 0 !important;
 }
 
-a:hover {
+/* a:hover {
   color: #a0c53a !important;
-}
+} */
 
 .sidebar .widget-tags ul > li a:hover {
   color: #fff !important;
+}
+.owl-stage .item, .post-overaly-style {
+  cursor: pointer;
 }

@@ -150,13 +150,27 @@ const getNewsByCategory = (request, response) => {
   const slug = request.params.slug;
   console.log("getNewsByCategory", slug);
   const queryString =
-    "SELECT post.id, name as category, image.path as imagePath, title, subText, text, post.timeCreated FROM post LEFT JOIN category on category.id = post.categoryId LEFT JOIN image on image.id = post.imageId WHERE category.id = (Select id from category where slug = ?)";
+    "SELECT post.id, name as category, image.path as imagePath, title, subText, text, post.slug as postSlug, category.slug as categorySlug, post.timeCreated FROM post LEFT JOIN category on category.id = post.categoryId LEFT JOIN image on image.id = post.imageId WHERE category.id = (Select id from category where slug = ?) ORDER BY post.timeCreated DESC";
 
   connection.query(queryString, slug, (error, results) => {
     if (error) {
       throw error;
     }
 
+    response.status(200).json(results);
+  });
+};
+
+const getNewsByPriority = (request, response) => {
+  const queryString = `SELECT post.id, name as category, priority, post.slug as postSlug, category.slug as categorySlug, image.path as imagePath, title, post.timeCreated FROM post 
+  LEFT JOIN category on category.id = post.categoryId 
+  LEFT JOIN image on image.id = post.imageId
+  ORDER BY post.priority DESC limit 8`;
+
+  connection.query(queryString, (error, results) => {
+    if (error) {
+      throw error;
+    }
     response.status(200).json(results);
   });
 };
@@ -171,5 +185,5 @@ module.exports = {
   getMoreNews,
   getPopularNews,
   getNewsByCategory,
-  
+  getNewsByPriority
 };

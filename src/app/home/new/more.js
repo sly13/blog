@@ -6,6 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import { getMoreNews } from "../../../action";
 import Item from "./item";
+import { withRouter } from "react-router";
 
 class More extends Component {
   state = {
@@ -63,4 +64,4 @@ class More extends Component {
   }
 }
 
-export default More;
+export default withRouter(More);

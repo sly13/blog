@@ -30,20 +30,37 @@ class PreHeader extends Component {
               <div className="col-md-4 top-social text-lg-right text-md-center">
                 <ul className="unstyled">
                   <li>
-                    <a title="Instagram" href="/">
+                    <a
+                      title="Instagram"
+                      href="https://www.instagram.com/teahub.ru"
+                      target="blank"
+                    >
                       <span className="social-icon">
                         <i className="fa fa-instagram" />
                       </span>
                     </a>
 
-                    <a title="Skype" href="/">
+                    <a title="Vk" href="https://vk.com/teahub" target="blank">
                       <span className="social-icon">
                         <i className="fa fa-vk" />
                       </span>
                     </a>
-                    <a title="Facebook" href="/">
+                    <a
+                      title="Facebook"
+                      href="https://www.facebook.com/TeaHub-308508270008979"
+                      target="blank"
+                    >
                       <span className="social-icon">
                         <i className="fa fa-facebook" />
+                      </span>
+                    </a>
+                    <a
+                      title="Youtube"
+                      href="https://www.youtube.com/channel/UCK-zse49B5-h14Xfhou7H_w"
+                      target="blank"
+                    >
+                      <span className="social-icon">
+                        <i className="fa fa-youtube" />
                       </span>
                     </a>
                     {/* <a title="Twitter" href="/">

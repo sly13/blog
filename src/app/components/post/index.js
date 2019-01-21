@@ -92,9 +92,10 @@ class Index extends Component {
                           </a>
                         </div>
                         <div className="entry-content">
+                          {/* <p>{text && renderHTML(text)}</p> */}
                           <p>{text && renderHTML(text)}</p>
 
-                          <p>
+                          {/* <p>
                             Throw myself down teems with vapour around me, and
                             the meridian sun strikes the upper surface of the
                             impenetrable foliage of my trees, and but a few
@@ -175,7 +176,7 @@ class Index extends Component {
                             semiotics skateboard, try-hard food truck aesthetic
                             biodiesel exercitation. Accusamus VHS Wes Anderson
                             Banksy food truck vero.
-                          </p>
+                          </p> */}
                         </div>
 
                         <div className="tags-area clearfix">

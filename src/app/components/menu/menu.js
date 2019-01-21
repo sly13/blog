@@ -1,25 +1,25 @@
 import React, { Component } from "react";
 import Search from "./search";
-import { Link } from "react-router-dom";
-import $ from "jquery";
 import { withRouter } from "react-router";
+import NavItem from "./NavItem";
 
 class Menu extends Component {
-  componentDidMount() {
-    $(".nav.navbar-nav li a").on("click", function() {
-      $(this)
-        .parent("li")
-        .find(".dropdown-menu")
-        .slideToggle();
-      $(this)
-        .find("li i")
-        .toggleClass("fa-angle-down fa-angle-up");
-    });
+  // componentDidMount() {
+  //   $(".nav.navbar-nav li a").on("click", function() {
+  //     $(this)
+  //       .parent("li")
+  //       .find(".dropdown-menu")
+  //       .slideToggle();
+  //     $(this)
+  //       .find("li i")
+  //       .toggleClass("fa-angle-down fa-angle-up");
+  //   });
 
-    $('.nav-tabs[data-toggle="tab-hover"] > li > a').hover(function() {
-      $(this).tab("show");
-    });
-  }
+  //   $('.nav-tabs[data-toggle="tab-hover"] > li > a').hover(function() {
+  //     $(this).tab("show");
+  //   });
+  // }
+
   state = {};
   render() {
     return (
@@ -46,6 +46,26 @@ class Menu extends Component {
                     className="collapse navbar-collapse navbar-responsive-collapse"
                   >
                     <ul className="nav navbar-nav">
+                      <NavItem to="/category/vse-o-chae">Всё о чае</NavItem>
+                      <NavItem to="/category/zelenii-chai">Зеленый чай</NavItem>
+                      <NavItem to="/category/chernii-chai">Черный чай</NavItem>
+
+                      <NavItem to="/category/kitaiskii-chai">
+                        Китайский чай
+                      </NavItem>
+
+                      <NavItem to="/category/prigotovlenie-chaya">
+                        Приготовление чая
+                      </NavItem>
+
+                      <NavItem to="/category/istoriya-chaya">
+                        История чая
+                      </NavItem>
+
+                      <NavItem to="/category/chainaya-posuda">
+                        Чайная посуда
+                      </NavItem>
+
                       {/* <li className="nav-item dropdown active">
                         <a href="/" className="nav-link" data-toggle="dropdown">
                           Home <i className="fa fa-angle-down" />
@@ -463,31 +483,6 @@ class Menu extends Component {
                         </div>
                       </li> */}
 
-                      <li className="active">
-                        <Link to="/category/vse-o-chae">Всё о чае</Link>
-                      </li>
-                      <li>
-                        <Link to="/category/zelenii-chai">Зеленый чай</Link>
-                      </li>
-                      <li>
-                        <Link to="/chernii-chai">Черный чай</Link>
-                      </li>
-                      <li>
-                        <Link to="/category/kitaiskii-chai">Китайский чай</Link>
-                      </li>
-                      <li>
-                        <Link to="/category/prigotovlenie-chaya">
-                          Приготовление чая
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/category/istoriya-chaya">История чая</Link>
-                      </li>
-                      <li>
-                        <Link to="/category/chainaya-posuda">
-                          Чайная посуда
-                        </Link>
-                      </li>
                       {/* 
                       <li className="dropdown nav-item mega-dropdown">
                         <a

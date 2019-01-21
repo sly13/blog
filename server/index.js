@@ -7,6 +7,7 @@ const multer = require("multer");
 
 const db = require("./api/category");
 const postDB = require("./api/post");
+const subscribe = require("./api/subscribe");
 
 const storage = multer.diskStorage({
   destination: "./files",
@@ -76,8 +77,11 @@ app.post("/post", upload.single("file"), (req, res) => {
 app.put("/post/:id", postDB.updatePost);
 app.delete("/post/:id", postDB.deletePost);
 
+app.get("/post-priority", postDB.getNewsByPriority);
 app.get("/post-more", postDB.getMoreNews);
 app.get("/post-popular", postDB.getPopularNews);
+
+app.post("/subscribe", subscribe.create);
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);
